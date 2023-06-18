@@ -10,6 +10,7 @@ import { jwtValidator } from "./middlewares/jwtValidator";
 import LogoutRouter from "./routers/logout";
 import RefreshTokenRouter from "./routers/refreshToken";
 import EmployeesRouter from "./routers/employee";
+import ArmChairRouter from "./routers/armChair";
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(cookieParser());
 app.use(ROUTES.AUTH.URL, AuthRouter);
 app.use(ROUTES.REFRESH_TOKEN.URL, RefreshTokenRouter);
 app.use(ROUTES.AUTH.URL, LogoutRouter);
+app.use(ROUTES.ARMCHAIRS.URL, ArmChairRouter);
 
 /* Private Routes */
 app.use(jwtValidator);

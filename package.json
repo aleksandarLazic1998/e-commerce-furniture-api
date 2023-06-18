@@ -5,7 +5,7 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "ts-node ./src/server.ts",
-		"start:nodemon": "./node_modules/nodemon/bin/nodemon.js"
+		"start:nodemon": "nodemon ./src/server.ts"
 	},
 	"keywords": [],
 	"author": "Aleksandar Lazic",

@@ -7,9 +7,7 @@ export const connectToDB = async (server: Server) => {
 		await mongoose.connect(ENV_CONST.MONGO_DB_URI);
 		console.log("Connected To DB");
 
-		server.listen(ENV_CONST.PORT, () =>
-			console.log(`Listening on port: ${ENV_CONST.PORT}`)
-		);
+		server.listen(3006, () => console.log(`Listening on port: ${3006}`));
 	} catch (error) {
 		process.exit(1);
 		console.log("Connection to Data Base failed.");

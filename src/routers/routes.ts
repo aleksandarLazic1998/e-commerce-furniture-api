@@ -13,6 +13,9 @@ const ROUTES = {
 	EMPLOYEES: {
 		URL: `${BASIC_API_ROUTE}/employees`,
 	},
+	ARMCHAIRS: {
+		URL: `${BASIC_API_ROUTE}/arm-chairs`,
+	},
 };
 
 export default ROUTES;
