@@ -5,14 +5,9 @@ interface IProps {
 
 const makeHttpError = ({ statusCode, errorMessage }: IProps) => {
 	return {
-		headers: {
-			"Content-Type": "application/json",
-		},
+		headers: { "Content-Type": "application/json" },
 		statusCode,
-		data: JSON.stringify({
-			success: false,
-			error: errorMessage,
-		}),
+		data: JSON.stringify({ success: false, error: errorMessage }),
 	};
 };
 export default makeHttpError;
