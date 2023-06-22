@@ -22,8 +22,9 @@ app.use(cookieParser());
 /* Public Routes */
 app.use(ROUTES.AUTH.URL, AuthRouter);
 app.use(ROUTES.REFRESH_TOKEN.URL, RefreshTokenRouter);
-app.use(ROUTES.AUTH.URL, LogoutRouter);
 app.use(ROUTES.ARMCHAIRS.URL, ArmChairRouter);
+app.use(ROUTES.AUTH.URL, LogoutRouter);
+// This return Unauthorized
 
 /* Private Routes */
 app.use(jwtValidator);
