@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { getArmChairs } from "../controllers/armchairs/getArmChairs";
+import armChairController from "../controllers/armchairs/armChairController";
 
 const ArmChairRouter = Router();
+console.log(1234);
 
-ArmChairRouter.route("/").get(getArmChairs);
+ArmChairRouter.route("/").get(armChairController);
 
 export default ArmChairRouter;
