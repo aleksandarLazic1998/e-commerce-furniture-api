@@ -8,9 +8,7 @@ const armChairController = (req: Request, res: Response) => {
 
 	handleArmChairRequest(httpRequest)
 		.then(({ headers, statusCode, data }: IHttpResponse) => {
-			console.log(headers, statusCode, data);
-
-			return res.set(headers).status(statusCode).send(data);
+			res.set(headers).status(statusCode).send(data);
 		})
 		.catch(() => res.status(500).end());
 };

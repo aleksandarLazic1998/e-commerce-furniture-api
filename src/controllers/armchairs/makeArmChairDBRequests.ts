@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import ArmChairModel from "../../models/armhChair";
+// import ArmChairModel from "../../models/armhChair";
 
 interface IProps {
 	database: Promise<typeof import("mongoose") | undefined>;
